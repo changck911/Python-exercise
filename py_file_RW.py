@@ -28,11 +28,3 @@ f.close();
 f = open(path+'\\test.txt','r');
 print(f.read());
 f.close();
-#修改
-f = open(path+'\\test.txt','a');
-#f.seek(位移的bit數,0) - 從文件開頭開始
-#f.seek(位移的bit數,1) - 從目前游標位置開始
-#f.seek(位移的bit數,2) - 從目前文件結尾開始
-f.seek(2);
-f.write('test123');
-f.close();
